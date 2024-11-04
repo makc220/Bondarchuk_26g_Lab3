@@ -50,6 +50,9 @@ body {
 .step:last-child p {
   font-weight: bold;
 }
+.step:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
 .section-title {
   font-size: 20px;
   margin-bottom: 20px;
