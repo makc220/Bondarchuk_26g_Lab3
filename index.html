@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Variant 2</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <div class="container">
+    
+    <div class="steps-container">
+      <div class="step">
+        <img src="./image/Streamer.svg" alt="Streamer Configuration Icon" class="icon">
+        <p>1. Streamer configuration</p>
+      </div>
+      <div class="step">
+        <img src="./image/Personal.svg" alt="Personal Details Icon" class="icon">
+        <p>2. Your personal details</p>
+      </div>
+      <div class="step active">
+        <img src="./image/Payment.svg" alt="Payment Method Icon" class="icon">
+        <p>3. Payment method</p>
+      </div>
+    </div>
+
+    <form action="index.html" method="post">
+      <div class="main-container">
+        <fieldset class="payment-options">
+          <legend class="section-title">Choose your payment method</legend>
+        
+          <div class="option">
+            <label for="paypal" class="payment-label">
+              <input type="radio" id="paypal" name="payment" value="paypal">
+              <span class="payment-title">PayPal</span>
+              <img src="./image/PayPal.png" alt="PayPal logo" class="icon-paypal">
+              <p>Safe payment online. Credit card needed. PayPal account is not necessary.</p>
+            </label>
+          </div>
+
+          <div class="option">
+            <label for="credit-card" class="payment-label">
+              <input type="radio" id="credit-card" name="payment" value="credit-card" checked>
+              <span class="payment-title">Credit Card</span>
+              <img src="./image/Visa.png" alt="Visa Card" class="Card">
+              <img src="./image/Maestro.png" alt="Maestro Card" class="Card">  
+              <img src="./image/Discover.png" alt="Discover Card" class="Card">
+              <img src="./image/American Express.png" alt="American Express Card" class="Card">
+              <p>Safe money transfer using your bank account. Visa, Maestro, Discover, American Express.</p>
+
+              <div class="credit-card-details">
+                <div class="input-group">
+                  <label for="card-number">CREDIT CARD NUMBER</label>
+                  <div class="input-container">
+                    <input type="text" id="card-number" placeholder="6655 8844 2233 5599" maxlength="16" required>
+                    <img src="./image/right.svg" alt="right icon" class="input-icon">
+                  </div>
+                </div>
+
+                <div class="input-group-small">
+                  <div class="input-field">
+                    <label for="cvv">CVV CODE</label> 
+                    <a href="index.html"><img src="./image/detailed information.png" alt="Detailed Information" class="detailed-information-icon"></a>
+                    <div class="input-container">
+                      <input type="text" id="cvv" maxlength="3" required>
+                      <img src="./image/card.png" alt="card icon" class="input-icon2">
+                    </div>
+                  </div>
+
+                  <div class="input-field">
+                    <label for="expiry">EXPIRY DATE</label>
+                    <input type="text" id="expiry" placeholder="MM / YY" maxlength="5" required>
+                  </div>
+                </div>
+
+                <div class="input-group">
+                  <label for="name">NAME ON CARD</label>
+                  <input type="text" id="name" required>
+                </div>
+              </div>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="summary-container">
+          <h2>Summary</h2>
+          <div class="summary-section">
+            <p><strong>Packet:</strong> <span class="highlight">Full package (100+ channels)</span></p>
+            <p><strong>Duration:</strong> <span class="highlight">3m.</span></p>
+            <hr>
+            <p>Translations: <span class="price">€ 159.99</span></p>
+            <p>Discount for points: <span class="price">€ 0.00</span></p>
+            <p>Gift card discount: <span class="price">€ 0.00</span></p>
+            <hr>
+            <p class="discount-container">
+              <a href="index.html" class="discount-link">Have a discount code?</a>
+              <span class="total-price">€ 159.99</span>
+            </p>
+          </div>
+          
+          <div class="information-section">
+            <div class="info-item">
+              <img src="./image/Shipping.png" alt="Shipping icon">
+              <div>
+                <strong>Streaming box shipping information</strong>
+                <p>Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web.</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <img src="./image/Money back.png" alt="Money back icon" />
+              <div>
+                <strong>30 days money back guarantee</strong>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button type="button" class="back-button" onclick="location.href='index.html'">GO BACK</button>
+        <div class="agreement-and-checkout">
+          <p class="agreement-text">
+            By clicking check out button you agree with our terms and conditions and money back guarantee. Thank you for trusting our service.
+          </p>
+          <button type="submit" class="checkout-button">CHECK OUT <span class="arrow">→</span></button>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
